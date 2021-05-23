@@ -1,4 +1,9 @@
 <style>
+  @font-face {
+    font-family: "OPPO Sans";
+    src: url("/fonts/OPPOSans-R.ttf");
+  }
+
   * {
     border:0;
     font:inherit;
@@ -11,16 +16,17 @@
   }
 
   body {
-    font-family:'Open Sans', 'Myriad Pro', Myriad, sans-serif;
+    font-family: 'OPPO Sans', 'Open Sans', 'Myriad Pro', Myriad, sans-serif;
     font-size:17px;
     line-height:160%;
     color:#1d1313;
-    max-width:700px;
+    max-width:1000px;
     margin:auto;
   }
 
   p {
     margin: 20px 0;
+    letter-spacing: 1pt;
   }
 
   a img {
@@ -87,11 +93,15 @@
   }
 
   .sans,html .gist .gist-file .gist-meta {
-    font-family:"Open Sans","Myriad Pro",Myriad,sans-serif;
+    font-family:'OPPO Sans', "Open Sans","Myriad Pro",Myriad,sans-serif;
   }
 
   .mono,pre,code,tt,p code,li code {
-    font-family:Menlo,Monaco,"Andale Mono","lucida console","Courier New",monospace;
+    font-family: Menlo,Monaco,"Andale Mono","lucida console","Courier New",monospace;
+  }
+
+  .section-title {
+    font-family: "fangsong", "Old Standard TT",serif;
   }
 
   .heading,.serif,h1,h2,h3 {
@@ -115,7 +125,7 @@
   }
 
   blockquote {
-    font-family:"Old Standard TT",serif;
+    font-family:'OPPO Sans', "Old Standard TT",serif;
     text-align:center;
     padding:50px;
   }
@@ -126,7 +136,7 @@
   }
 
   blockquote:before,blockquote:after {
-    font-family:"Old Standard TT",serif;
+    font-family:'OPPO Sans', "Old Standard TT",serif;
     content:'\201C';
     font-size:35px;
     color:#403c3b;
@@ -283,7 +293,7 @@
   }
 
   #not-found a {
-    font-family:"Old Standard TT",serif;
+    font-family:'OPPO Sans', "Old Standard TT",serif;
     font-size: 200px;
     text-decoration: none;
     display: inline-block;
