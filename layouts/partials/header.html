@@ -33,6 +33,7 @@
   <body>
     <section id=nav>
       <h1 id="site-title"><a href="/">{{ .Site.Params.sitename }}</a></h1>
+      <h3>{{ .Site.Params.slogan }}</h3>
       <ul>
         {{ range .Site.Menus.main }}
           <li><a href="{{ .URL }}">{{ .Name }}</a></li>
