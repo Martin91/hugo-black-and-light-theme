@@ -9,6 +9,12 @@
     </div>
   {{ end }}
 
+  {{ if .Params.gentoc }}
+    <div id="toc" class="well col-md-4 col-sm-6">
+    {{ .TableOfContents }}
+    </div>
+  {{ end }}
+
   <div class="entry-content">
     {{ .Content }}
   </div>
