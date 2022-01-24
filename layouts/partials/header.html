@@ -8,6 +8,7 @@
     <meta name="referrer" content="no-referrer">
     <meta name="description" content="{{ .Description | default .Site.Params.Description }}">
     <meta name="baidu-site-verification" content="{{ .Site.Params.baiduSiteVerifyCode }}" />
+    <meta name="referrer" content="strict-origin-when-cross-origin">
 
     {{ if not .Site.Params.disableWebFonts }}
       <link href="https://fonts.googleapis.com/css?family=Open+Sans:400|Old+Standard+TT:400&display=swap" rel="stylesheet" media="print" type="text/css" onload="this.media='all'">
@@ -36,6 +37,16 @@
     {{ range .AlternativeOutputFormats -}}
         {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
     {{ end -}}
+
+    <script>
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?288e2eb770bdfc3ef2b333b7d845fb2a";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
   </head>
 
   <body>
