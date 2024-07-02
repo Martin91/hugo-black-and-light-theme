@@ -8,7 +8,6 @@
       {{ .Date.Format (.Site.Params.dateform | default "January 2006") }} · {{ .ReadingTime }} minute read
     </div>
   {{ end }}
-
   {{ if .Params.toc }}
     <div id="toc" class="well col-md-4 col-sm-6">
     {{ .TableOfContents }}
@@ -17,6 +16,7 @@
 
   <div class="entry-content">
     {{ .Content }}
+    <blockquote>版权声明：本文为原创文章，转载请注明来源：《<a href="{{ .Permalink }}">{{ .Title }} - {{.Site.Title}}</a>》，谢绝未经允许的转载。</blockquote>
   </div>
 
   <div id=links>
